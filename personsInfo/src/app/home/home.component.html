@@ -1,0 +1,20 @@
+<h1>Personal Information System.</h1>
+
+<nav class = "navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/persons" routerLinkActive="active">All Persons</a>
+          <button class = "navbar-toggler" type = "button" data-toggle="cpllapse" 
+          data-target = "#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation"> </button>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/personsCriteria" routerLinkActive="active">Search Persons</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+<router-outlet></router-outlet>
+</div>

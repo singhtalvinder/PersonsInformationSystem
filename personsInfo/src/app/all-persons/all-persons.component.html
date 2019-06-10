@@ -1,0 +1,25 @@
+<body>
+  <div>
+      <a routerLink="/" routerLinkActive="active">home</a>
+  </div>
+  <div class= "container-fluid" *ngIf="personsDetails?.length; else noRecords">
+      <table class= "table table-striped">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let person of personsDetails">
+            <td>{{person.firstName}}</td>
+            <td>{{person.lastName}}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div> 
+  <ng-template #noRecords>
+      <h3>No records found.</h3>
+  </ng-template>
+</body>
+
